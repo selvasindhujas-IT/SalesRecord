@@ -1,0 +1,128 @@
+body {
+  margin: 0;
+  font-family: "Poppins", sans-serif;
+  background: linear-gradient(135deg, #6a00f4, #b300ff);
+  color: #fff;
+  min-height: 100vh;
+}
+
+.dashboard-wrapper {
+  max-width: 1000px;
+  margin: 50px auto;
+  background: rgba(255, 255, 255, 0.08);
+  border-radius: 20px;
+  box-shadow: 0 0 25px rgba(0, 0, 0, 0.3);
+  padding: 40px;
+  text-align: center;
+  backdrop-filter: blur(10px);
+}
+
+h1 {
+  margin-bottom: 25px;
+  color: #fff;
+  font-size: 2rem;
+  letter-spacing: 1px;
+}
+
+.form {
+  display: grid;
+  
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  gap: 15px;
+  margin-bottom: 20px;
+}
+
+.form input {
+  padding: 10px 15px;
+  border: none;
+  border-radius: 10px;
+  outline: none;
+  font-size: 14px;
+}
+
+.add-btn {
+  grid-column: span 2;
+position: relative;
+right: -70%;
+  background: linear-gradient(90deg, #ff00cc, #3333ff);
+  color: #fff;
+  border: none;
+  padding: 12px;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: all 0.3s;
+  font-weight: 600;
+}
+
+.add-btn:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 10px #ff66ff;
+}
+
+.action-bar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 25px;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+.search-bar {
+  flex: 1;
+  padding: 10px 15px;
+  border-radius: 10px;
+  border: none;
+  outline: none;
+  font-size: 14px;
+}
+
+.toggle-btn {
+  background: linear-gradient(90deg, #ff00cc, #3333ff);
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: all 0.3s;
+  font-weight: 600;
+}
+
+.toggle-btn:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 10px #ff66ff;
+}
+
+.table-container {
+  margin-top: 25px;
+  overflow-x: auto;
+}
+
+.sales-table {
+  width: 100%;
+  border-collapse: collapse;
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 15px;
+  overflow: hidden;
+}
+
+.sales-table th,
+.sales-table td {
+  padding: 12px;
+  text-align: center;
+}
+
+.sales-table th {
+  background: rgba(255, 255, 255, 0.15);
+  font-weight: 600;
+}
+
+.sales-table tr:nth-child(even) {
+  background: rgba(255, 255, 255, 0.05);
+}
+
+.no-data {
+  margin-top: 20px;
+  color: #ddd;
+  font-style: italic;
+}
