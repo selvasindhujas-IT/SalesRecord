@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 import "./dashboard.css";
 
-const API_URL = "http://localhost:5000/api/sales";
+const API_URL = "https://salesrecord.onrender.com/";
 
 function Dashboard() {
   const [form, setForm] = useState({
